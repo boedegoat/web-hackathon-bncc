@@ -1,6 +1,6 @@
 /* reset */
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 a {
@@ -13,16 +13,16 @@ ul {
 }
 
 html {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  scroll-behavior: smooth;
-  --primary-white: #f0eff9;
-  --secondary-white: #c0c0c0;
+	font-family: 'Manrope', sans-serif;
+	font-optical-sizing: auto;
+	scroll-behavior: smooth;
+	--primary-white: #f0eff9;
+	--secondary-white: #c0c0c0;
 }
 
 body {
-  background-color: #000000;
-  color: var(--primary-white);
+	background-color: #000000;
+	color: var(--primary-white);
 }
 
 button {
@@ -34,77 +34,8 @@ button {
 /* utils */
 .container {
 	margin: 0 auto;
-	max-width: 1400px;
+	max-width: 1536px;
 	padding: 0 20px;
-}
-
-.container .sub-title-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	margin-top: 100px;
-}
-
-.container .sub-title-content .sub-title {
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 122%; /* 21.96px */
-	text-align: center;
-	width: 100%;
-}
-
-.container .title {
-	font-size: 64px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 125%; /* 80px */
-	text-align: center;
-}
-
-.container .title span {
-	background: var(
-		--Hero-Tittle-Accent,
-		linear-gradient(94deg, #552bff 44.48%, #ff23c1 67.4%, #fff0ca 93.82%)
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.container .description {
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 32px; /* 228.571% */
-	text-align: center;
-}
-
-.container .buttons-content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 100px;
-}
-
-.container .buttons-content .buttons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	width: 100%;
-}
-
-.container .buttons-content .button-explore {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-}
-
-.container .buttons-content .explore {
-	transform: rotate(90deg);
 }
 
 .font-orbitron {
@@ -180,266 +111,342 @@ button {
 	font-feature-settings: 'clig' off, 'liga' off;
 }
 
+/* intro */
+.intro {
+	padding-bottom: 250px;
+}
+
+.intro-sub-title-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-top: 100px;
+}
+
+.intro-sub-title {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 122%; /* 21.96px */
+	text-align: center;
+	width: 100%;
+}
+
+.intro-title {
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 125%; /* 80px */
+	text-align: center;
+}
+
+.intro-title span {
+	background: var(
+		--Hero-Tittle-Accent,
+		linear-gradient(94deg, #552bff 44.48%, #ff23c1 67.4%, #fff0ca 93.82%)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.intro-description {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px; /* 228.571% */
+	text-align: center;
+	max-width: 832px;
+	margin: 0 auto;
+}
+
+.intro-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 100px;
+	position: relative;
+}
+
+.intro-explore-btn {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	transform: rotate(90deg);
+	transform-origin: right;
+}
+
+.intro-explore-btn-title {
+	margin: 0;
+	font-size: 8px;
+}
+
 /* about us */
 .about-us-img {
-  border-radius: 20px;
+	border-radius: 20px;
 }
 
 .about-us-h3 {
-  color: #927cea;
-  font-family: Orbitron;
-  font-size: 12px;
-  font-weight: 700;
-  margin-top: 48px;
-  margin-bottom: 0;
+	color: #927cea;
+	font-family: Orbitron;
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 48px;
+	margin-bottom: 0;
 }
 
 .about-us-h2 {
-  margin-top: 5px;
-  font-size: 32px;
-  color: #fff;
-  font-weight: 700;
+	margin-top: 5px;
+	font-size: 32px;
+	color: #fff;
+	font-weight: 700;
 }
 
 .about-us-p {
-  color: var(--secondary-white);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-top: 24px;
+	color: var(--secondary-white);
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 30px;
+	margin-top: 24px;
 }
 
 /* why */
 .why {
-  padding-top: 210px;
+	padding-top: 210px;
 }
 
 .why-h2 {
-  font-size: 32px;
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  line-height: 109%;
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	line-height: 109%;
 }
 
 .why-p {
-  font-size: 12px;
-  color: var(--secondary-white);
-  text-align: center;
-  font-weight: 600;
-  line-height: 25px;
-  margin-top: 13px;
-  max-width: 599px;
-  margin-left: auto;
-  margin-right: auto;
+	font-size: 12px;
+	color: var(--secondary-white);
+	text-align: center;
+	font-weight: 600;
+	line-height: 25px;
+	margin-top: 13px;
+	max-width: 599px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .why-card-container {
-  margin-top: 80px;
-  display: flex;
-  gap: 32px;
+	margin-top: 80px;
+	display: flex;
+	gap: 32px;
 }
 
 .why-card {
-  border-radius: 20px;
-  border: 1px solid #2b2b2b;
-  padding: 42px;
-  background: rgba(30, 29, 38, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	border-radius: 20px;
+	border: 1px solid #2b2b2b;
+	padding: 42px;
+	background: rgba(30, 29, 38, 0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .why-card-logo {
-  width: 54px;
-  height: 52.591px;
-  border-radius: 8px;
-  /* border: 1px solid #ff23c1; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    31deg,
-    #552bff 33.27%,
-    #8528ed 62.56%,
-    #ff23c1 98.4%,
-    #fff0ca 98.41%,
-    #fff0ca 98.41%
-  );
+	width: 54px;
+	height: 52.591px;
+	border-radius: 8px;
+	/* border: 1px solid #ff23c1; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		31deg,
+		#552bff 33.27%,
+		#8528ed 62.56%,
+		#ff23c1 98.4%,
+		#fff0ca 98.41%,
+		#fff0ca 98.41%
+	);
 }
 
 .why-card-h3 {
-  color: #fff;
-  font-family: Orbitron;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 0;
+	color: #fff;
+	font-family: Orbitron;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 0;
 }
 
 .why-card-p {
-  color: var(--secondary-white);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 29px;
-  margin-top: 16px;
+	color: var(--secondary-white);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 29px;
+	margin-top: 16px;
 }
 
 .why-links {
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+	margin-top: 70px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
 }
 
+/* prizes */
 .prizes {
-  margin-top: 150px;
+	margin-top: 150px;
 }
 
 .prizes .container .prizes-p {
-  color: #927cea;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Orbitron;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 109%; /* 13.08px */
+	color: #927cea;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Orbitron;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 109%; /* 13.08px */
 }
 
 .prizes .container .prizes-p2 {
-  color: var(--Secondary-White, #c0c0c0);
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Manrope;
-  font-size: 14px;
-  width: 473px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 174%; /* 24.36px */
+	color: var(--Secondary-White, #c0c0c0);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Manrope;
+	font-size: 14px;
+	width: 473px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 174%; /* 24.36px */
 }
 
 .prizes .container .prizes-h3 {
-  color: #fff;
-  font-feature-settings: "clig" off, "liga" off;
-  width: 429px;
-  font-family: Manrope;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 129%; /* 41.28px */
+	color: #fff;
+	font-feature-settings: 'clig' off, 'liga' off;
+	width: 429px;
+	font-family: Manrope;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 129%; /* 41.28px */
 }
 
 .prizes .winner-section {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .prizes .winner-section .template-winner {
-  width: 352px;
-  height: 520px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  border: 1px solid #2b2b2b;
-  background: rgba(30, 29, 38, 0.6);
+	width: 352px;
+	height: 520px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	border: 1px solid #2b2b2b;
+	background: rgba(30, 29, 38, 0.6);
 }
 
 .prizes .winner-section .second-template {
-  margin-top: -150px;
+	margin-top: -150px;
 }
 
 .prizes .winner-section .first-template {
-  margin-top: -300px;
+	margin-top: -300px;
 }
 
 .prizes .winner-section .template-winner .svg-winner {
-  width: 158px;
-  height: 148.202px;
-  flex-shrink: 0;
-  background-color: #1e1d2699;
-  border-radius: 20px;
-  border: 1px solid #2b2b2b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 42px 95px 0px 95px;
+	width: 158px;
+	height: 148.202px;
+	flex-shrink: 0;
+	background-color: #1e1d2699;
+	border-radius: 20px;
+	border: 1px solid #2b2b2b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 42px 95px 0px 95px;
 }
 
 .prizes .winner-section .template-winner .p-winner span.third {
-  color: #a67544;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Orbitron;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 109%; /* 39.24px */
+	color: #a67544;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Orbitron;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 109%; /* 39.24px */
 }
 
 .prizes .winner-section .template-winner .p-winner span.second {
-  color: #b8b8b8;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Orbitron;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 109%; /* 39.24px */
+	color: #b8b8b8;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Orbitron;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 109%; /* 39.24px */
 }
 
 .prizes .winner-section .template-winner .p-winner span.first {
-  color: #ffb72a;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Orbitron;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 109%; /* 39.24px */
+	color: #ffb72a;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Orbitron;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 109%; /* 39.24px */
 }
 
 .prizes .winner-section .template-winner .p-winner {
-  color: #fff;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Orbitron;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 109%;
+	color: #fff;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Orbitron;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 109%;
 }
 
 .prizes .winner-section .template-winner .p-include {
-  color: #fff;
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  margin-top: -20px;
-  margin-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	margin-top: -20px;
+	margin-bottom: 20px;
 }
 
 .benefit-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: max-content;
-  margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: max-content;
+	margin: 0 auto;
 }
 
 .benefit-section .benefit {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 .benefit-section .benefit p {
-  color: #fff;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 109%; /* 15.26px */
+	color: #fff;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 109%; /* 15.26px */
 }
