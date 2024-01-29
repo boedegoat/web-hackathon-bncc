@@ -164,6 +164,7 @@ body {
 /* intro */
 .intro {
 	height: calc(100vh - 39px);
+	min-height: 720px;
 }
 
 .intro-container {
@@ -282,6 +283,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.why-card.first {
+	min-width: 352px;
+	width: 40%;
 }
 
 .why-card-logo {
