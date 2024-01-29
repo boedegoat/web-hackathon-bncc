@@ -183,9 +183,11 @@ body {
 }
 
 .intro-title span {
-	background: var(
-		--Hero-Tittle-Accent,
-		linear-gradient(94deg, #552bff 44.48%, #ff23c1 67.4%, #fff0ca 93.82%)
+	background: linear-gradient(
+		94deg,
+		#552bff 44.48%,
+		#ff23c1 67.4%,
+		#fff0ca 93.82%
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
