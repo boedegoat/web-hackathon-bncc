@@ -122,6 +122,16 @@ body {
 	line-height: 30px;
 }
 
+.abstract-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	/* border: 1px solid #2b2b2b; */
+}
+
 /* nav */
 .nav {
 	height: 39px;
@@ -238,6 +248,7 @@ body {
 /* about us */
 .about-us {
 	padding-top: 185px;
+	position: relative;
 }
 
 .about-us-container {
