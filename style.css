@@ -12,23 +12,25 @@ ul {
 	margin: 0;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+/* base */
 html {
 	font-family: 'Manrope', sans-serif;
 	font-optical-sizing: auto;
 	scroll-behavior: smooth;
 	--primary-white: #f0eff9;
 	--secondary-white: #c0c0c0;
+	--font-orbitron: 'Orbitron', sans-serif;
 }
 
 body {
 	background-color: #000000;
 	color: var(--primary-white);
-}
-
-button {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
 }
 
 /* utils */
@@ -38,8 +40,12 @@ button {
 	padding: 0 48px;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .font-orbitron {
-	font-family: 'Orbitron', sans-serif;
+	font-family: var(--font-orbitron);
 }
 
 .btn {
@@ -81,6 +87,33 @@ button {
 .btn-secondary-gray {
 	background: #282828;
 	color: var(--primary-white);
+}
+
+.section-title {
+	color: #fff;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 129%;
+	margin-top: 14px;
+}
+
+.section-sub-title {
+	color: #927cea;
+	font-family: var(--font-orbitron);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 109%;
+	margin-bottom: 0;
+}
+
+.section-description {
+	color: var(--secondary-white);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 /* nav */
@@ -210,53 +243,9 @@ button {
 	width: 50%;
 }
 
-.about-us-h3 {
-	color: #927cea;
-	font-family: Orbitron;
-	font-size: 12px;
-	font-weight: 700;
-	margin-bottom: 0;
-}
-
-.about-us-h2 {
-	margin-top: 5px;
-	font-size: 32px;
-	color: #fff;
-	font-weight: 700;
-}
-
-.about-us-p {
-	color: var(--secondary-white);
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 30px;
-	margin-top: 24px;
-	max-width: 599px;
-}
-
 /* why */
 .why {
 	padding-top: 210px;
-}
-
-.why-h2 {
-	font-size: 32px;
-	color: #fff;
-	text-align: center;
-	font-weight: 700;
-	line-height: 109%;
-}
-
-.why-p {
-	font-size: 12px;
-	color: var(--secondary-white);
-	text-align: center;
-	font-weight: 600;
-	line-height: 25px;
-	margin-top: 13px;
-	max-width: 599px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .why-card-container {
@@ -279,7 +268,6 @@ button {
 	width: 54px;
 	height: 52.591px;
 	border-radius: 8px;
-	/* border: 1px solid #ff23c1; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -319,38 +307,6 @@ button {
 /* prizes */
 .prizes {
 	margin-top: 150px;
-}
-
-.prizes .container .prizes-p {
-	color: #927cea;
-	font-feature-settings: 'clig' off, 'liga' off;
-	font-family: Orbitron;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 109%; /* 13.08px */
-}
-
-.prizes .container .prizes-p2 {
-	color: var(--Secondary-White, #c0c0c0);
-	font-feature-settings: 'clig' off, 'liga' off;
-	font-family: Manrope;
-	font-size: 14px;
-	width: 473px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 174%; /* 24.36px */
-}
-
-.prizes .container .prizes-h3 {
-	color: #fff;
-	font-feature-settings: 'clig' off, 'liga' off;
-	width: 429px;
-	font-family: Manrope;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 129%; /* 41.28px */
 }
 
 .prizes .winner-section {
